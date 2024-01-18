@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body class="flex flex-col  bg-slate-400 max-w-2xl mx-auto ">
+    <div class="flex flex-col gap-y-8 mt-10">
+    
+    <!-- na movafagh  -->
+    <div class="py-4 px-8 bg-red-200 text-red-500 border border-red-500 rounded-md relative " x-show='show' x-data ="{show: true}">
+        <strong>please pay attention</strong>
+        this program is not suitable
+        <svg xmlns="http://www.w3.org/2000/svg" x-on:click="show = false" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 absolute top-2 right-4 cursor-pointer">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+          
+    </div>
+    <!-- na movafagh  -->
+    
+    <!-- movafagh  -->
+    <div class="py-4 px-8 bg-green-200 text-green-600 border border-green-500 rounded-md relative" x-show='show' x-data ="{show: true}">
+        <strong>no problem</strong>
+        this program is suitable
+        <svg xmlns="http://www.w3.org/2000/svg" x-on:click="show = false" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 absolute top-2 right-4 cursor-pointer">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+    </div>
+    <!--  movafagh  -->
+
+     <!-- movafagh  -->
+     <div class="py-4 px-8 bg-yellow-200 text-yellow-600 border border-yellow-400 rounded-md relative" x-show='show' x-data ="{show: true}">
+        <strong>no problem</strong>
+        access may be limited
+        <svg xmlns="http://www.w3.org/2000/svg" x-on:click="show = false" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 absolute top-2 right-4 cursor-pointer">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+    </div>
+    <!--  movafagh  -->
+</div>  
+        
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</body>
+</html>
